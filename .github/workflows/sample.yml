@@ -29,7 +29,7 @@ jobs:
       with: 
             host: ${{ secrets.MACHINE_IP }}        
             username: ${{ secrets.USER_NAME }}      
-            key: ${{ secrets.SERVER_SSH_KEY }}
+            key: ${{ secrets.SAMPLE_SSH_KEY }}
             port: 22
             source: "*.war"      
             target: "C:/Users/EAY7849/Desktop/webserver/tomcat/webapps"
