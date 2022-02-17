@@ -32,4 +32,4 @@ jobs:
             key: ${{ secrets.AZ_SAMPLE_SSH_KEY }}
             port: 22
             source: "/home/runner/work/SampleAPI/SampleAPI/target/SpringBootHelloWorldExample.war"      
-            target: "SpringBootHelloWorldExample"
+            target: "~/SpringBootHelloWorldExample"
