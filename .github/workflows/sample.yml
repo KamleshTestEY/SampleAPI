@@ -32,4 +32,4 @@ jobs:
             password: ${{ secrets.AZ_PASSWORD }}  
             port: 22
             source: "/home/runner/work/SampleAPI/SampleAPI/target/SpringBootHelloWorldExample.war"      
-            target: "~/SpringBootHelloWorldExample"
+            target: "C:\"
