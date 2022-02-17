@@ -32,4 +32,4 @@ jobs:
             key: ${{ secrets.SAMPLE_SSH_KEY }}
             port: 22
             source: "/home/runner/work/SampleAPI/SampleAPI/target/SpringBootHelloWorldExample.war"      
-            target: "C:/Users/EAY7849/Desktop/webserver/tomcat/webapps"
+            target: "SpringBootHelloWorldExample"
