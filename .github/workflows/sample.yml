@@ -27,9 +27,9 @@ jobs:
     - name: Upload_TO_VM
       uses: appleboy/scp-action@master
       with: 
-            host: ${{ secrets.MACHINE_IP }}        
-            username: ${{ secrets.USER_NAME }}      
-            key: ${{ secrets.SAMPLE_SSH_KEY }}
+            host: ${{ secrets.AZ_MACHINE_IP }}        
+            username: ${{ secrets.AZ_USER_NAME }}      
+            key: ${{ secrets.AZ_SAMPLE_SSH_KEY }}
             port: 22
             source: "/home/runner/work/SampleAPI/SampleAPI/target/SpringBootHelloWorldExample.war"      
             target: "SpringBootHelloWorldExample"
