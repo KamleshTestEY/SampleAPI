@@ -37,6 +37,6 @@ jobs:
             host: ${{ secrets.AZ_MACHINE_IP }}        
             username: ${{ secrets.AZ_USER_NAME }}  
             password: ${{ secrets.AZ_PASSWORD }}
-            port: 3389
+            port: 22
             source: "/home/runner/work/SampleAPI/SampleAPI/target/SpringBootHelloWorldExample.war"      
             target: "/C:/"
