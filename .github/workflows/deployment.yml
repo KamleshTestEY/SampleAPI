@@ -29,6 +29,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Fetch_Artifact
       run: gh run download -n output
+      env:
+          GITHUB_TOKEN: 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
     - name: List Artifact
       run: ls
     - name: Upload_TO_VM
