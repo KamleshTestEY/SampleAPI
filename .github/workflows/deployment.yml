@@ -27,6 +27,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
+    - name: Fetch_Artifact
+      run: gh run download -n output
+    - name: List Artifact
+      run: ls
     - name: Upload_TO_VM
       uses: appleboy/scp-action@master
       with: 
