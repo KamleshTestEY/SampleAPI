@@ -30,7 +30,7 @@ jobs:
     - name: Fetch_Artifact
       uses: dawidd6/action-download-artifact@v2
       with:
-          github_token: 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
+          github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: Integration.yml
           branch: master
           name: output
