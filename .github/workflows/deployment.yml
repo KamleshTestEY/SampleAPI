@@ -32,7 +32,9 @@ jobs:
       with:
           github_token: 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
           workflow: Integration.yml
+          branch: master
           name: output
+          repo: ${{github.repository}}
     - name: List Artifact
       run: ls
     - name: Upload_TO_VM
