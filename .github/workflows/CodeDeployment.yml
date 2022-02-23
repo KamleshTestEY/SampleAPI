@@ -6,7 +6,7 @@
             username: ${{ secrets.AZ_USER_NAME }}  
             password: ${{ secrets.AZ_PASSWORD }}
             port: 22
-            source: output      
+            source: SpringBootHelloWorldExample.war      
             target: ~/
     
 - name: Deploy_application
