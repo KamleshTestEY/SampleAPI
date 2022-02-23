@@ -18,6 +18,6 @@ jobs:
         with:
             host: ${{ secrets.AZ_MACHINE_IP }}        
             username: ${{ secrets.AZ_USER_NAME }}  
-     password: ${{ secrets.AZ_PASSWORD }}
-     port: 22
+            password: ${{ secrets.AZ_PASSWORD }}
+            port: 22
      script: whoami | mkdir /home/sample/sample.txt
