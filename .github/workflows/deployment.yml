@@ -26,11 +26,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v2
+
     # Runs a single command using the runners shell
     - name: Fetch_Artifact
-      uses: aochmann/actions-download-artifact@1.0.0
+      uses: blablacar/action-download-last-artifact@master
       with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          #github_token: ${{secrets.GITHUB_TOKEN}}
           #workflow: Code_Build_Integration.yml
           #branch: master
           name: output
@@ -38,7 +40,7 @@ jobs:
           path: extract_here
           #repo: ${{github.repository}}
     - name: List Artifact
-      run: ls
+      run: ls -R
     - name: Upload_TO_VM
       uses: appleboy/scp-action@master
       with: 
