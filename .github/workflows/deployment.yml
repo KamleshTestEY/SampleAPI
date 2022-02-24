@@ -40,7 +40,10 @@ jobs:
           #path: extract_here
           #repo: ${{github.repository}}
     - name: List Artifact
-      run: pwd | ls -R
+      run:  ls 
+    - name: Present directory
+      run:  pwd 
+      
     - name: Upload_TO_VM
       uses: appleboy/scp-action@master
       with: 
@@ -48,7 +51,7 @@ jobs:
             username: ${{ secrets.AZ_USER_NAME }}
             password: ${{ secrets.AZ_PASSWORD }}
             port: 22
-            source: /~.zip
+            source: ~.zip
             target: ~/
     - name: Deploy_Application
       uses: appleboy/ssh-action@master
