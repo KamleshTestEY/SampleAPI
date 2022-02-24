@@ -37,10 +37,10 @@ jobs:
           #branch: master
           name: output
           latest: true
-          path: extract_here
+          #path: extract_here
           #repo: ${{github.repository}}
-    - name: List Artifact
-      run: ls -R
+   # - name: List Artifact
+    #  run: ls -R
     - name: Upload_TO_VM
       uses: appleboy/scp-action@master
       with: 
@@ -48,7 +48,7 @@ jobs:
             username: ${{ secrets.AZ_USER_NAME }}
             password: ${{ secrets.AZ_PASSWORD }}
             port: 22
-            source: SpringBootHelloWorldExample.war
+            source: ~.war
             target: ~/
     - name: Deploy_Application
       uses: appleboy/ssh-action@master
