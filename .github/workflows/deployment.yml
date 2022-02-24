@@ -30,7 +30,7 @@ jobs:
     - name: Fetch_Artifact
       uses: aochmann/actions-download-artifact@1.0.0
       with:
-          #github_token: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{secrets.GITHUB_TOKEN}}
           #workflow: Code_Build_Integration.yml
           #branch: master
           name: output
