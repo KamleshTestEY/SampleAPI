@@ -30,8 +30,8 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Fetch_Artifact
-      #uses: blablacar/action-download-last-artifact@master
-      uses: actions/download-artifact@v2.1.0
+      uses: blablacar/action-download-last-artifact@master
+      #uses: actions/download-artifact@v2.1.0
       with:
           #github_token: ${{secrets.GITHUB_TOKEN}}
           #workflow: Code_Build_Integration.yml
