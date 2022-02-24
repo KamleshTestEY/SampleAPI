@@ -28,13 +28,15 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Fetch_Artifact
-      uses: dawidd6/action-download-artifact@v2
+      uses: aochmann/actions-download-artifact@1.0.0
       with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
-          workflow: Code_Build_Integration.yml
-          branch: master
+          #github_token: ${{secrets.GITHUB_TOKEN}}
+          #workflow: Code_Build_Integration.yml
+          #branch: master
           name: output
-          repo: ${{github.repository}}
+          latest: true
+          path: extract_here
+          #repo: ${{github.repository}}
     - name: List Artifact
       run: ls
     - name: Upload_TO_VM
