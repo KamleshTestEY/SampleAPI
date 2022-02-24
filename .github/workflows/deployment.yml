@@ -40,7 +40,7 @@ jobs:
           #path: extract_here
           #repo: ${{github.repository}}
     - name: List Artifact
-      run: ls -R
+      run: pwd | ls -R
     - name: Upload_TO_VM
       uses: appleboy/scp-action@master
       with: 
