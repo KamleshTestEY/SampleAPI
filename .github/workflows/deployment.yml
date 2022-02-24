@@ -48,7 +48,7 @@ jobs:
             username: ${{ secrets.AZ_USER_NAME }}
             password: ${{ secrets.AZ_PASSWORD }}
             port: 22
-            source: ~.war
+            source: /~.war
             target: ~/
     - name: Deploy_Application
       uses: appleboy/ssh-action@master
